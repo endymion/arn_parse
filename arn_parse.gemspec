@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Parse an AWS ARN and get its various sections.}
   spec.description   = %q{Based on https://gist.github.com/RulerOf/b9f5dd00a9911aba8271b57d3d269d7a}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/endymion/arn_parse"
   spec.license       = "MIT"
 
   # Specify which files should be added to the gem when it is released.
