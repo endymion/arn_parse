@@ -1,8 +1,8 @@
 # ArnParse
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/arn_parse`. To experiment with that code, run `bin/console` for an interactive prompt.
+I needed to parse an AWS ARN with Ruby.  I couldn't find a Ruby gem that provided that funcionality (do the AWS SDK gems?) but I did find this Gist: https://gist.github.com/RulerOf/b9f5dd00a9911aba8271b57d3d269d7a
 
-TODO: Delete this and the text above, and describe your gem
+So I packaged that Gist as a Ruby gem.  Thanks, Andrew!
 
 ## Installation
 
@@ -22,13 +22,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+    $ bundle exec irb
+    2.4.0 :001 > require 'arn_parse'
+     => true
+    2.4.0 :002 > ArnParse::Arn.parse('arn:aws:s3:::serverless-url-screenshot.development.files')
+     => #<ArnParse::Arn:0x007fa0d9a701d0 @partition="aws", @service="s3", @region="", @account="", @resource="serverless-url-screenshot.development.files">
 
 ## Contributing
 
