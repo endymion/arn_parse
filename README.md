@@ -1,8 +1,8 @@
 # ArnParse
 
-I needed to parse an AWS ARN with Ruby.  I couldn't find a Ruby gem that provided that funcionality (do the AWS SDK gems?) but I did find this Gist: https://gist.github.com/RulerOf/b9f5dd00a9911aba8271b57d3d269d7a
+AWS ARNs can be parsed with [Aws::ARNParser](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/ARNParser.html). You can use this gem if you don't want to bring in the entire AWS SDK. 
 
-So I packaged that Gist as a Ruby gem.  Thanks, Andrew!
+This code packages [this gist](https://gist.github.com/RulerOf/b9f5dd00a9911aba8271b57d3d269d7a) as a gem. Thanks, Andrew!
 
 ## Installation
 
